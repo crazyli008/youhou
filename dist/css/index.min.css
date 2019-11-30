@@ -69,6 +69,7 @@ img {
   top: 32px;
   left: 0;
   display: none;
+  z-index: 1;
 }
 
 .header .header-top .header-top-main .header-top-main-left ul li {
@@ -302,6 +303,7 @@ img {
   left: 0;
   background-color: #eaeceb;
   display: none;
+  z-index: 1;
 }
 
 .header .header-top .header-top-main .header-top-main-right li:nth-child(6) ul li {
@@ -362,6 +364,7 @@ img {
   padding-bottom: 14px;
   background-color: #f4f4f4;
   display: none;
+  z-index: 1;
 }
 
 .header .header-top .header-top-main .header-top-main-right li:nth-child(7) div img {
@@ -567,6 +570,10 @@ img {
 
 .header .header-middle .header-middle-main .header-middle-main-logo img {
   margin-left: -50%;
+}
+
+.header .header-middle .header-middle-main .header-middle-main-logo img:nth-child(2) {
+  display: none;
 }
 
 .header .header-nav {
