@@ -27,6 +27,7 @@ img {
 /* 有货头部*/
 .header {
   height: 163px;
+  /*中部*/
 }
 
 .header .header-top, .header .header-top .header-top-main {
@@ -69,7 +70,7 @@ img {
   top: 32px;
   left: 0;
   display: none;
-  z-index: 1;
+  z-index: 10;
 }
 
 .header .header-top .header-top-main .header-top-main-left ul li {
@@ -303,7 +304,7 @@ img {
   left: 0;
   background-color: #eaeceb;
   display: none;
-  z-index: 1;
+  z-index: 10;
 }
 
 .header .header-top .header-top-main .header-top-main-right li:nth-child(6) ul li {
@@ -364,7 +365,7 @@ img {
   padding-bottom: 14px;
   background-color: #f4f4f4;
   display: none;
-  z-index: 1;
+  z-index: 10;
 }
 
 .header .header-top .header-top-main .header-top-main-right li:nth-child(7) div img {
@@ -416,7 +417,7 @@ img {
   padding-bottom: 14px;
   background-color: #f4f4f4;
   display: none;
-  z-index: 1;
+  z-index: 10;
 }
 
 .header .header-top .header-top-main .header-top-main-right li:nth-child(8) div img {
@@ -451,6 +452,9 @@ img {
   height: 90px;
   margin: 0 auto;
   position: relative;
+  /*中部左区*/
+  /*中部右区*/
+  /*中部logo区*/
 }
 
 .header .header-middle .header-middle-main ul {
@@ -532,6 +536,7 @@ img {
   top: 30px;
   left: -310px;
   display: none;
+  z-index: 10;
 }
 
 .header .header-middle .header-middle-main .header-middle-main-right .cart div img {
@@ -613,6 +618,7 @@ img {
   display: none;
   padding-top: 30px;
   padding-bottom: 30px;
+  z-index: 10;
 }
 
 .header .header-nav .main li .header-nav-sub1 .header-nav-sub1-cot {
@@ -735,4 +741,307 @@ img {
 
 .header .header-nav .main li:nth-child(6):hover .header-nav-sub1 {
   display: block;
+}
+
+/* 有货内容区*/
+section {
+  margin-top: 10px;
+  /*有货第一个轮播图插件的css*/
+  /*人气单品*/
+}
+
+section .cxslide_fade {
+  overflow: hidden;
+  position: relative;
+  width: 1150px;
+  height: 510px;
+  margin: 0 auto;
+}
+
+section .cxslide_fade .box {
+  overflow: hidden;
+  position: relative;
+  z-index: 4;
+}
+
+section .cxslide_fade .list {
+  overflow: hidden;
+  width: 1150px;
+  height: 450px;
+  width: 1150px;
+  height: 450px;
+  margin: 0 auto;
+}
+
+section .cxslide_fade .list li {
+  position: relative;
+  width: 960px;
+  height: 270px;
+}
+
+section .cxslide_fade .btn {
+  width: 1150px;
+  height: 60px;
+  z-index: 5;
+  margin: 0 auto;
+}
+
+section .cxslide_fade .btn li {
+  overflow: hidden;
+  float: left;
+  width: 180px;
+  height: 60px;
+  margin-left: 14px;
+  padding-top: 7px;
+}
+
+section .cxslide_fade .btn li:first-child {
+  margin-left: 0;
+}
+
+section .cxslide_fade .plus {
+  position: absolute;
+  top: 187.5px;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  right: 0;
+  z-index: 9;
+  background: url(../img/jiatouyou.png);
+}
+
+section .cxslide_fade .minus {
+  position: absolute;
+  top: 187.5px;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  left: 0;
+  z-index: 9;
+  background: url(../img/jiantouzuo.png);
+}
+
+section .singlegood {
+  width: 1150px;
+  margin: auto;
+}
+
+section .singlegood h3 {
+  width: 298px;
+  height: 31px;
+  border: 1px solid #000;
+  line-height: 31px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 16px;
+  margin-left: 429px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+section .singlegood ul {
+  overflow: hidden;
+}
+
+section .singlegood ul li {
+  float: left;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+section .singlegood ul li:nth-child(5n) {
+  margin-right: 0;
+}
+
+section .singlegood ul li:hover a img {
+  opacity: 0.8;
+}
+
+/*有货底部*/
+.footer {
+  margin-top: 110px;
+  background: #000;
+  color: white;
+}
+
+.footer .footer-main {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.footer .footer-main .footer-main-top {
+  height: 31px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+
+.footer .footer-main .footer-main-top div {
+  float: left;
+  margin-right: 60px;
+  height: 31px;
+  line-height: 31px;
+}
+
+.footer .footer-main .footer-main-top div .iconfont {
+  font-size: 27px;
+}
+
+.footer .footer-main .footer-main-top div b {
+  color: #e01;
+  font-weight: normal;
+}
+
+.footer .footer-main .footer-main-middle {
+  height: 120px;
+  width: 1150px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #262626;
+}
+
+.footer .footer-main .footer-main-middle ul li {
+  width: 177px;
+  float: left;
+}
+
+.footer .footer-main .footer-main-middle ul li h5 {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.footer .footer-main .footer-main-middle ul li p {
+  line-height: 25px;
+}
+
+.footer .footer-main .footer-main-middle ul li p a {
+  color: #666666;
+  font-size: 12px;
+}
+
+.footer .footer-main .footer-main-middle ul li p a:hover {
+  text-decoration: underline;
+}
+
+.footer .footer-main .footer-main-middle ul li:nth-child(7) {
+  width: 85px;
+}
+
+.footer .footer-main .footer-main-link {
+  padding-top: 10px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #262626;
+}
+
+.footer .footer-main .footer-main-link .aboutus {
+  width: 1150px;
+  height: 60px;
+}
+
+.footer .footer-main .footer-main-link .aboutus .left {
+  overflow: hidden;
+  float: left;
+}
+
+.footer .footer-main .footer-main-link .aboutus .left div {
+  float: left;
+  background: white;
+  height: 34px;
+  margin-right: 10px;
+  margin-top: 13px;
+}
+
+.footer .footer-main .footer-main-link .aboutus .left div img {
+  margin-top: 5px;
+}
+
+.footer .footer-main .footer-main-link .aboutus .left img {
+  float: left;
+  margin-right: 10px;
+  margin-top: 13px;
+}
+
+.footer .footer-main .footer-main-link .aboutus .right {
+  float: right;
+  width: 800px;
+}
+
+.footer .footer-main .footer-main-link .aboutus .right a {
+  color: #666;
+  font-size: 12px;
+}
+
+.footer .footer-main .footer-main-link .aboutus .right span {
+  font-size: 12px;
+  color: #666;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.footer .footer-main .footer-main-link p {
+  padding-top: 20px;
+  height: 20px;
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+}
+
+.footer .footer-main footer {
+  overflow: hidden;
+  padding-top: 20px;
+  height: 28px;
+  font-size: 12px;
+  position: relative;
+}
+
+.footer .footer-main footer p {
+  float: left;
+  width: 60px;
+}
+
+.footer .footer-main footer ul {
+  width: 1090px;
+  position: absolute;
+  top: 20px;
+  left: 60px;
+}
+
+.footer .footer-main footer ul li {
+  height: 48px;
+  margin-right: 11px;
+  margin-left: 11px;
+  float: left;
+}
+
+.footer .footer-main footer ul li a {
+  color: #666;
+}
+
+.footer .footer-main footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer .footer-main footer ul li:nth-child(14) {
+  margin-right: 16px;
+}
+
+/*有货漂浮*/
+.piao-erweima {
+  width: 116px;
+  position: fixed;
+  top: 260px;
+  right: 20px;
+  z-index: 100;
+}
+
+.piao-erweima .close {
+  position: absolute;
+  right: -5px;
+  top: -25px;
+}
+
+.piao-erweima h4 {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 5px;
 }

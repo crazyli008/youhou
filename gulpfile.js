@@ -9,8 +9,8 @@ let gulp = require('gulp'),
 // 处理js文件，压缩合并
 gulp.task('js',()=>{
     gulp.src('./src/js/ES5/*.js')
-    .pipe(concat('main.min.js'))
     .pipe(uglify())
+    .pipe(rename({suffix : '.min'}))
     .pipe(gulp.dest('./dist/js'))
 })
 //处理图片的任务
