@@ -1,0 +1,466 @@
+@import "public";
+/*有货注册头部*/
+.header {
+  height: 66px;
+  border-bottom: 2px solid #222;
+  margin-bottom: 20px;
+  .header-main {
+    width: 990px;
+    height: 66px;
+    margin: 0 auto;
+    line-height: 66px;
+    font-size: 12px;
+    h3 {
+      height: 66px;
+      float: left;
+    }
+    ul {
+      float: right;
+      li {
+        display: inline-block;
+        height: 28px;
+        line-height: 28px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      li:nth-child(2) {
+        width: 54px;
+        position: relative;
+        dl {
+          width: 74px;
+          position: absolute;
+          top: 28px;
+          left: 0;
+          background: #eaeceb;
+          display: none;
+          dt {
+            width: 54px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: 1px solid #ddd;
+            border-left: none;
+            border-right: none;
+          }
+          dd {
+            width: 54px;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+        }
+      }
+      li:nth-child(4) {
+        @extend li:nth-child(2);
+      }
+      li:nth-child(2):hover {
+        background: #eaeceb;
+        dl {
+          height: auto;
+          display: block;
+        }
+      }
+    }
+  }
+}
+section {
+  width: 1150px;
+  height: 637px;
+  margin: 0 auto;
+  padding-top: 107px;
+  .left {
+    width: 575px;
+    height: 318px;
+    border-right: 1px solid #dfdfdf;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    float: left;
+    img {
+      margin-top: 50px;
+      margin-left: 161.5px;
+    }
+  }
+  .right {
+    padding-left: 85px;
+    width: 340px;
+    height: 637px;
+    float: left;
+    ol {
+      li {
+        margin-bottom: 25px;
+        .region {
+          width: 132px;
+          height: 30px;
+          color: #9a9a9a;
+          border: 1px solid #c1c1c1;
+          font-size: 16px;
+          padding: 4px 0;
+          outline: none;
+        }
+      }
+      /*输入手机号*/
+      .phone {
+        height: 45px;
+        position: relative;
+        span {
+          float: left;
+          width: 58px;
+          height: 43px;
+          color: #9a9a9a;
+          border: 1px solid #dbdbdb;
+          border-right: none;
+          text-align: center;
+          white-space: nowrap;
+          font-size: 16px;
+          line-height: 43px;
+        }
+        input {
+          float: left;
+          padding: 0;
+          width: 211px;
+          height: 43px;
+          border: 1px solid #dbdbdb;
+          color: #9a9a9a;
+          text-indent: 10px;
+          font-size: 16px;
+          line-height: 43px;
+        }
+        .phone-msg {
+          width: 200px;
+          height: 30px;
+          padding-left: 10px;
+          padding-right: 10px;
+          border: 1px solid #ffbdbe;
+          background-color: #ffebeb;
+          font-size: 12px;
+          color: red;
+          line-height: 30px;
+          position: absolute;
+          top: -40px;
+          left: 60px;
+          display: none;
+          i {
+            display: block;
+            width: 17px;
+            height: 9px;
+            background: url(../img/sprite.passport.png);
+            background-position: -488px -108px;
+            position: absolute;
+            top: 30px;
+            left: 20px;
+          }
+        }
+      }
+      /*短信验证码*/
+      li:nth-child(4) {
+        input:nth-child(1) {
+          width: 160px;
+          height: 43px;
+          color: #9a9a9a;
+          font-size: 16px;
+          line-height: 43px;
+          text-indent: 10px;
+        }
+        input:nth-child(2) {
+          width: 120px;
+          height: 45px;
+          text-align: center;
+          padding-left: 10px;
+          padding-right: 10px;
+          color: #fff;
+          background: #ff1901;
+          outline: none;
+          border: none;
+          cursor: pointer;
+        }
+      }
+      /*密码框*/
+      .pwd {
+        position: relative;
+        input {
+          width: 270px;
+          height: 43px;
+          border: 1px solid #dbdbdb;
+          color: #9a9a9a;
+          font-size: 16px;
+          line-height: 43px;
+          text-indent: 10px;
+        }
+        /*密码强度框*/
+        .strong {
+          width: 270px;
+          text-align: right;
+          span {
+            font-size: 12px;
+            color: #b9b9b9;
+            padding: 1px 10px;
+            background: #e8e8e8;
+          }
+        }
+        /*提示信息*/
+        .pwmsg {
+          position: absolute;
+          top: 0;
+          left: 280px;
+          color: #e01;
+          font-size: 12px;
+          width: 158px;
+          height: 77px;
+          background: url(../img/sprite.passport.png);
+          background-position: -149px -159px;
+          display: none;
+          p {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+          }
+        }
+      }
+      /*潮流口令*/
+      li:nth-child(6) {
+        input {
+          width: 270px;
+          height: 43px;
+          border: 1px solid #dbdbdb;
+          color: #9a9a9a;
+          font-size: 16px;
+          line-height: 43px;
+          text-indent: 10px;
+        }
+      }
+      /*阅读协议*/
+      li:nth-child(7) {
+        span {
+          color: #b9b9b9;
+          font-size: 12px;
+          a {
+            color: #ff1901;
+            text-decoration: underline;
+            margin-top: 8px;
+            margin-right: 10px;
+          }
+        }
+      }
+      /*立即注册*/
+      li:nth-child(8) {
+        input {
+          width: 270px;
+          height: 45px;
+          color: #fff;
+          background: #555555;
+          border: none;
+          font-size: 20px;
+        }
+      }
+      /*快速登录*/
+      li:nth-child(9) {
+        color: #b9b9b9;
+        font-size: 12px;
+        a {
+          color: #ff1901;
+          text-decoration: underline;
+          margin-top: 8px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+.footer {
+  margin-top: 110px;
+  background: #000;
+  color: white;
+  .footer-main {
+    width: 1150px;
+    margin: 0 auto;
+    .footer-main-top {
+      height: 31px;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      overflow: hidden;
+      div {
+        float: left;
+        margin-right: 60px;
+        height: 31px;
+        line-height: 31px;
+        .iconfont {
+          font-size: 27px;
+        }
+        b {
+          color: #e01;
+          font-weight: normal;
+        }
+      }
+    }
+    .footer-main-middle {
+      height: 120px;
+      width: 1150px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-top: 1px solid #262626;
+      ul {
+        li {
+          width: 177px;
+          float: left;
+          h5 {
+            font-size: 14px;
+            font-weight: normal;
+          }
+          p {
+            line-height: 25px;
+            a {
+              color: #666666;
+              font-size: 12px;
+            }
+            a:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+        li:nth-child(7) {
+          width: 85px;
+        }
+      }
+    }
+    .footer-main-link {
+      padding-top: 10px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #262626;
+      .aboutus {
+        width: 1150px;
+        height: 60px;
+        .left {
+          overflow: hidden;
+          float: left;
+          div {
+            float: left;
+            background: white;
+            height: 34px;
+            margin-right: 10px;
+            margin-top: 13px;
+
+            img {
+              margin-top: 5px;
+            }
+          }
+          img {
+            float: left;
+            margin-right: 10px;
+            margin-top: 13px;
+          }
+        }
+        .right {
+          float: right;
+          width: 800px;
+          a {
+            color: #666;
+            font-size: 12px;
+          }
+          span {
+            font-size: 12px;
+            color: #666;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+        }
+      }
+      p {
+        padding-top: 20px;
+        height: 20px;
+        font-size: 12px;
+        color: #666;
+        text-align: center;
+      }
+    }
+    footer {
+      overflow: hidden;
+      padding-top: 20px;
+      height: 28px;
+      font-size: 12px;
+      position: relative;
+      p {
+        float: left;
+        width: 60px;
+      }
+      ul {
+        width: 1090px;
+        position: absolute;
+        top: 20px;
+        left: 60px;
+        li {
+          height: 48px;
+          margin-right: 11px;
+          margin-left: 11px;
+          float: left;
+          a {
+            color: #666;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+        li:nth-child(14) {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+}
+.gototop {
+  position: fixed;
+  left: 50%;
+  margin-left: 595px;
+  width: 74px;
+  height: 74px;
+  top: 600px;
+  z-index: 100;
+  cursor: pointer;
+  opacity: 0.5;
+  display: none;
+}
+.gototop:hover {
+  opacity: 1;
+}
+/*有货公众号*/
+.gong {
+  position: fixed;
+  left: 50%;
+  margin-left: 595px;
+  width: 74px;
+  height: 74px;
+  top: 500px;
+  background: url(../img/gong.png);
+  opacity: 0.5;
+  display: none;
+  .gong-show {
+    width: 260px;
+    height: 170px;
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    left: -300px;
+    background: #f4f4f4;
+    display: none;
+    div {
+      float: left;
+      width: 120px;
+      margin-right: 20px;
+      text-align: center;
+      font-size: 10px;
+      img {
+        width: 120px;
+      }
+      h3 {
+        font-weight: normal;
+      }
+    }
+    div:nth-child(2) {
+      margin-right: 0;
+    }
+  }
+}
+.gong:hover {
+  opacity: 1;
+  .gong-show {
+    display: block;
+  }
+}
