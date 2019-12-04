@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>新用户注册</title>
+    <title>用户登录</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../font/iconfont.css">
-    <link rel="stylesheet" href="../css/register.min.css">
+    <link rel="stylesheet" href="../css/login.min.css">
 </head>
 <body>
-    <!-- 注册头部 -->
+    <!-- 登录头部 -->
     <div class="header">
         <div class="header-main">
             <h3>
@@ -19,7 +19,7 @@
             </h3>
             <ul>
                 <li>
-                    <span>Hi~</span>&nbsp;<a href="login.html">[请登录]</a>&nbsp;<a href="#">[免费注册]</a>
+                    <span>Hi~</span>&nbsp;<a href="#">[请登录]</a>&nbsp;<a href="./register.html">[免费注册]</a>
                 </li>
                 <li>
                     <span>
@@ -43,81 +43,137 @@
             </ul>
         </div>
     </div>
-    <!-- 注册内容区 -->
+    <!-- 登录内容区 -->
     <section>
+        <!-- 头部绑定手机提示区 -->
+        <div class="top">
+            <i></i>
+            为保障账户安全与正常使用，依《网络安全法》相关要求，会员账号需绑定手机号。
+            <span>如您尚未绑定手机号，请尽快完成，</span>
+            感谢您对Yoho!Buy有货的理解与支持！
+        </div>
         <!-- 左部广告区 -->
         <div class="left">
             <img src="../img/section-adv.jpg" alt="">
         </div>
-        <!-- 右部注册信息区 -->
+        <!-- 右部登录信息区 -->
         <div class="right">
-            <ol>
-                <!-- 地区选择 -->
-                <li>
-                    <select class="region">
-                        <option>澳大利亚</option>
-                        <option>韩国</option>
-                        <option>加拿大</option>
-                        <option>马来西亚</option>
-                        <option>美国</option>
-                        <option>日本</option>
-                        <option>新加坡</option>
-                        <option=>英国</option>
-                        <option selected>中国</option>
-                        <option>中国澳门</option>
-                        <option>中国台湾</option>
-                        <option>中国香港</option>
+            <div class="rt-top">
+                <div class="rt-top-msg">
+                    密码登录在这里
+                </div>
+                <div class="rt-top-msg-tog">
+                    扫码登录更安全
+                </div>
+
+
+                <div class="rt-top-ico">
+
+                </div>
+
+            </div>
+            <div class="saoma">
+                <div class="rt-bott">
+                    <h3>手机扫码，安全登录</h3>
+                    <div class="move-erweima">
+                        <img src="../img/top-erweima.png" alt="">
+                    </div>
+                    <div class="sao-sao">
+
+                    </div>
+                    <!-- 遮罩层 -->
+                    <div class="mark">
+
+                    </div>
+                </div>
+                <div class="rt-bottf">
+                    <i></i>
+                    <p>
+                        打开手机Yoho!Buy有货
+                    </p>
+                    <p>
+                        扫一扫登录
+                    </p>
+                </div>
+                <h5>
+                    <a href="">下载YOHO!BUY有货手机APP</a>
+                </h5>
+            </div>
+            <div class="login">
+                <div class="login-top">
+                    <h2>会员登录</h2>
+                    <select>
+                        <option>澳大利亚&nbsp;+61</option>
+                        <option>韩国&nbsp;+82</option>
+                        <option>加拿大&nbsp;+1</option>
+                        <option>马来西亚&nbsp;+60</option>
+                        <option>美国&nbsp;+1</option>
+                        <option>日本&nbsp;+81</option>
+                        <option>新加坡&nbsp;+65</option>
+                        <option=>英国&nbsp;+44</option>
+                            <option selected>中国&nbsp;+86</option>
+                            <option>中国澳门&nbsp;+853</option>
+                            <option>中国台湾&nbsp;+886</option>
+                            <option>中国香港&nbsp;+852</option>
                     </select>
-                </li>
-                <!-- 输入手机号 -->
-                <li class="phone">
-                    <span>+86</span>
-                    <input type="text" placeholder="请输入手机号码">
-                    <div class="phone-msg">
-                        <i></i>
-                        手机格式不正确，请重新输入
+                </div>
+                <div class="switch">
+                    <div class="switch-left">
+                        普通登录
                     </div>
-                </li>
-                <!-- 验证码 -->
-                <li>验证码插件</li>
-                <!-- 短信验证码 -->
-                <li>
-                    <input type="text" placeholder="短信验证码">
-                    <input type="button" value="获取短信验证码">
-                </li>
-                <!-- 密码框 -->
-                <li class="pwd">
-                    <input type="password" placeholder="设置密码">
-                    <div class="strong">
-                        <span>低</span>
-                        <span>中</span>
-                        <span>高</span>
+                    <div class="switch-right">
+                        手机验证码登录
                     </div>
-                    <div class="pwmsg">
-                        <p>密码只支持6到20位数字</p> 
-                        <p>由字母、数字组合，不包含特殊符号</p>
+                </div>
+                <div class="simple-login">
+                    <input type="text" placeholder="邮箱/手机号码">
+                    <p class="p1"><i></i> 请输入正确的账户名</p>
+                    <input type="password" placeholder="密码">
+                    <p class="p2"><i></i> 密码格式有误</p>
+                    <div class="yan">
+                        验证码插件
                     </div>
-                </li>
-                <!-- 潮流口令 -->
-                <li>
-                    <input type="text" placeholder="潮流口令（非必填）">
-                </li>
-                <!-- 阅读协议 -->
-                <li>
+                    <input type="button" value="登录">
                     <span>
-                        注册即表示您已阅读并同意<br>
-                        <a href="">有货用户服务协议</a>
-                        <a class="" href="">有货隐私条款</a>
+                        <input type="checkbox">记住登录状态
                     </span>
-                </li>
-                <!-- 立即注册 -->
-                <li class="submit"><input type="button" value="立即注册"></li>
-                <!-- 快速登录 -->
-                <li>
-                    我已注册YOHO!BUY有货账号
-                    <a href="login.html">快速登录</a>
-                </li>
-            </ol>
+                    <span>
+                        <a href="">忘记密码？</a>|<a href="register.html">快速注册</a>
+                    </span>
+                </div>
+                <div class="phone-login">
+                    <input type="text" placeholder="手机号码/邮箱">
+                    <div class="yan">
+                        验证码插件
+                    </div>
+                    <input type="password" placeholder="短信验证码">
+                    <input type="button" value="登录">
+                    <span>
+                        <input type="checkbox">记住登录状态
+                    </span>
+                    <span>
+                        <a href="">忘记密码？</a>|<a href="register.html">快速注册</a>
+                    </span>
+                </div>
+
+                <div class="bottom">
+                    <a href=""><i></i></a><a href=""><i></i></a><a href=""><i></i></a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
     </section>
     <!-- 公共底部区 -->
@@ -276,8 +332,9 @@
     <script src="../js/jquery-1.12.4.min.js"></script>
     <!-- 导入cookie插件 -->
     <script src="../js/jquery.cookie.min.js"></script>
-    <!-- 导入注册页面的js -->
-    <script src="../js/register.min.js"></script>
+    <!-- 导入登录页面的js -->
+    <script src="../js/login.min.js"></script>
+
 </body>
 
 </html>

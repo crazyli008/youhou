@@ -1,0 +1,651 @@
+@import "public";
+/*有货登录头部*/
+.header {
+  height: 66px;
+  border-bottom: 2px solid #222;
+  margin-bottom: 20px;
+  .header-main {
+    width: 990px;
+    height: 66px;
+    margin: 0 auto;
+    line-height: 66px;
+    font-size: 12px;
+    h3 {
+      height: 66px;
+      float: left;
+    }
+    ul {
+      float: right;
+      li {
+        display: inline-block;
+        height: 28px;
+        line-height: 28px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      li:nth-child(2) {
+        width: 54px;
+        position: relative;
+        dl {
+          width: 74px;
+          position: absolute;
+          top: 28px;
+          left: 0;
+          background: #eaeceb;
+          display: none;
+          z-index: 1;
+          dt {
+            width: 54px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: 1px solid #ddd;
+            border-left: none;
+            border-right: none;
+          }
+          dd {
+            width: 54px;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+        }
+      }
+      li:nth-child(4) {
+        @extend li:nth-child(2);
+      }
+      li:nth-child(2):hover {
+        background: #eaeceb;
+        dl {
+          height: auto;
+          display: block;
+        }
+      }
+    }
+  }
+}
+/*有货登录内容区*/
+section {
+  width: 1150px;
+  height: 570px;
+  margin: 0 auto;
+  padding-top: 107px;
+  position: relative;
+  .top {
+    width: 870px;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 60px;
+    padding-right: 60px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -495px;
+    text-align: center;
+    font-size: 12px;
+    background: #f5f5f5;
+    i {
+      width: 12px;
+      height: 12px;
+      display: inline-block;
+      background: url(../img/sprite.passport.png);
+      background-position: -559px -36px;
+    }
+    span {
+      color: #ff0000;
+    }
+  }
+  .left {
+    width: 575px;
+    height: 318px;
+    border-right: 1px solid #dfdfdf;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    float: left;
+    img {
+      margin-top: 50px;
+      margin-left: 161.5px;
+    }
+  }
+  .right {
+    float: left;
+    width: 270px;
+    height: 387px;
+    margin-left: 85px;
+    // background: #008c8c;
+    .rt-top {
+      width: 270px;
+      height: 46px;
+      margin-bottom: 25px;
+      text-align: right;
+      position: relative;
+      .rt-top-msg {
+        width: 120px;
+        height: 30px;
+        background: url(../img/sprite.passport.png);
+        background-position: -323px -70px;
+        position: absolute;
+        top: 0;
+        right: 38px;
+        font-size: 12px;
+        text-align: center;
+        line-height: 30px;
+        color: #9b9b9b;
+      }
+      .rt-top-msg-tog {
+        width: 120px;
+        height: 30px;
+        background: url(../img/sprite.passport.png);
+        background-position: -323px -70px;
+        position: absolute;
+        top: 0;
+        right: 38px;
+        font-size: 12px;
+        text-align: center;
+        line-height: 30px;
+        color: #9b9b9b;
+        display: none;
+      }
+      .rt-top-msg-tog1 {
+        display: block;
+      }
+      .rt-top-ico {
+        width: 38px;
+        height: 38px;
+        background: url(../img/sprite.passport.png);
+        background-position: -323px -108px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .rt-top-ico-tog {
+        background-position: -369px -108px;
+      }
+    }
+    .saoma {
+      .rt-bott {
+        height: 180px;
+        position: relative;
+        margin-bottom: 20px;
+        h3 {
+          font-size: 14px;
+          font-weight: normal;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        .move-erweima {
+          width: 140px;
+          height: 140px;
+          background: url(../img/sprite.passport.png);
+          background-position: -175px 0;
+          position: absolute;
+          top: 40px;
+          left: 65px;
+          img {
+            width: 100%;
+          }
+        }
+        .sao-sao {
+          width: 167px;
+          height: 150px;
+          position: absolute;
+          background: url(../img/sprite.passport.png);
+          top: 30px;
+          left: 150px;
+          display: none;
+        }
+        .mark {
+          width: 100%;
+          height: 150px;
+          position: absolute;
+          top: 30px;
+          z-index: 1;
+        }
+      }
+      .rt-bottf {
+        margin-bottom: 25px;
+        i {
+          float: left;
+          width: 29px;
+          height: 27px;
+          background: url(../img/sprite.passport.png);
+          background-position: -477px -35px;
+          margin-left: 40px;
+          margin-right: 15px;
+        }
+        p {
+          font-size: 14px;
+          color: #9b9b9b;
+          line-height: 15px;
+          padding-left: 85px;
+        }
+      }
+      h5 {
+        text-align: center;
+        font-weight: normal;
+        a {
+          font-size: 14px;
+          color: #e01;
+        }
+      }
+    }
+    .saoma1 {
+      display: none;
+    }
+    .login {
+      display: none;
+      .login-top {
+        width: 270px;
+        height: 20px;
+        margin-bottom: 25px;
+        h2 {
+          font-size: 20px;
+          // font-weight: normal;
+          float: left;
+        }
+        select {
+          padding-left: 10px;
+          font-weight: normal;
+          float: right;
+          font-size: 16px;
+          border: none;
+          option[selected='selected']{
+            color: #b9b9b9;
+          }
+        }
+      }
+      .switch{
+        height: 27px;
+        width: 270px;
+        background: url(../img/sprite.passport.png);
+        background-position: -324px 0;
+        position: relative;
+        margin-bottom: 25px;
+        font-size: 12px;
+        .switch-left{
+          color: white;
+          line-height: 27px;
+          text-align: center;
+          height: 27px;
+          width: 145px;
+          float: left;
+          background: url(../img/sprite.passport.png);
+          background-position: -324px -35px;
+        }
+        .switch-left1{
+          color: #262626;
+          background: none;
+        }
+        .switch-right{
+          text-align: center;
+          line-height: 27px;
+          height: 27px;
+          width: 145px;
+          position: absolute;
+          right: 0;
+        }
+        .switch-right1{
+          color: white;
+          background: url(../img/sprite.passport.png);
+          background-position: -324px -35px;
+        }
+
+      }
+      .simple-login{
+        position: relative;
+        p{
+          width: 90px;
+          height: 14px;
+          font-size: 12px;
+          color: #ff1901;
+          position: absolute;
+          line-height: 14px;
+          padding-left: 20px;
+          display: none;
+          i{
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: url(../img/sprite.passport.png);
+            background-position: -515px -36px;
+            position: absolute;
+            top: 2px;
+            left: 0;
+          }
+        }
+        .p1{
+          top: 15px;
+          left: 295px;
+          // display: none;
+        }
+        .p2{
+          top: 90px;
+          left: 295px;
+        }
+
+        input{
+          width: 270px;
+          height: 47px;
+          margin-bottom: 25px;
+          border: 1px solid #dbdbdb;
+          outline: none;
+          text-indent: 10px;
+          font-size: 16px;
+        }
+        .yan{
+          width: 270px;
+          height: 62px;
+          margin-bottom: 25px;
+        }
+        input:nth-of-type(3){
+          background: #ff1901;
+          color: #fff;
+          border: none;
+          text-indent: 0;
+        }
+        span{
+          font-size: 12px;
+          color: #b9b9b9;
+          input{
+            width: 14px;
+            height: 14px;
+          margin: 0;
+          }
+          a{
+            color: #e01;
+          }
+          a:nth-child(1){
+            color: #b9b9b9;
+          }
+          a:nth-child(2){
+            padding-left: 10px;
+          }
+        }
+        span:nth-of-type(2){
+          padding-left: 59px;
+        }
+      }
+      .simple-login1{
+        display: none;
+      }
+      .phone-login{
+        display: none;
+        input{
+          width: 270px;
+          height: 47px;
+          margin-bottom: 25px;
+          border: 1px solid #dbdbdb;
+          outline: none;
+          text-indent: 10px;
+          font-size: 16px;
+        }
+        .yan{
+          width: 270px;
+          height: 62px;
+          margin-bottom: 25px;
+        }
+        input:nth-of-type(3){
+          background: #ff1901;
+          color: #fff;
+          border: none;
+          text-indent: 0;
+        }
+        span{
+          font-size: 12px;
+          color: #b9b9b9;
+          input{
+            width: 14px;
+            height: 14px;
+          margin: 0;
+          }
+          a{
+            color: #e01;
+          }
+          a:nth-child(1){
+            color: #b9b9b9;
+          }
+          a:nth-child(2){
+            padding-left: 10px;
+          }
+        }
+        span:nth-of-type(2){
+          padding-left: 59px;
+        }
+      }
+      .phone-login1{
+        display: block;
+      }
+      .bottom{
+        width: 270px;
+        height: 30px;
+        margin-top: 25px;
+        a{
+          display: inline-block;
+          height: 30px;
+          width: 30px;
+          padding-left: 30px;
+          padding-right: 30px;
+          i{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background:url(../img/sprite.passport.png);
+            background-position: -527px -70px;
+          }
+        }
+        a:nth-child(2){
+          i{
+             background-position: -565px -70px;
+          }
+        }
+        a:nth-child(3){
+          i{
+             background-position: -451px -70px;
+          }
+        }
+      }
+    }
+    .login1{
+      display: block;
+    }
+  }
+}
+  /*有货登录底部*/
+  .footer {
+    background: #000;
+    color: white;
+    .footer-main {
+      width: 1150px;
+      margin: 0 auto;
+      .footer-main-top {
+        height: 31px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        overflow: hidden;
+        div {
+          float: left;
+          margin-right: 60px;
+          height: 31px;
+          line-height: 31px;
+          .iconfont {
+            font-size: 27px;
+          }
+          b {
+            color: #e01;
+            font-weight: normal;
+          }
+        }
+      }
+      .footer-main-middle {
+        height: 120px;
+        width: 1150px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-top: 1px solid #262626;
+        ul {
+          li {
+            width: 177px;
+            float: left;
+            h5 {
+              font-size: 14px;
+              font-weight: normal;
+            }
+            p {
+              line-height: 25px;
+              a {
+                color: #666666;
+                font-size: 12px;
+              }
+              a:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+          li:nth-child(7) {
+            width: 85px;
+          }
+        }
+      }
+      .footer-main-link {
+        padding-top: 10px;
+        padding-bottom: 14px;
+        border-bottom: 1px solid #262626;
+        .aboutus {
+          width: 1150px;
+          height: 60px;
+          .left {
+            overflow: hidden;
+            float: left;
+            div {
+              float: left;
+              background: white;
+              height: 34px;
+              margin-right: 10px;
+              margin-top: 13px;
+
+              img {
+                margin-top: 5px;
+              }
+            }
+            img {
+              float: left;
+              margin-right: 10px;
+              margin-top: 13px;
+            }
+          }
+          .right {
+            float: right;
+            width: 800px;
+            a {
+              color: #666;
+              font-size: 12px;
+            }
+            span {
+              font-size: 12px;
+              color: #666;
+              padding-left: 10px;
+              padding-right: 10px;
+            }
+          }
+        }
+        p {
+          padding-top: 20px;
+          height: 20px;
+          font-size: 12px;
+          color: #666;
+          text-align: center;
+        }
+      }
+      footer {
+        overflow: hidden;
+        padding-top: 20px;
+        height: 28px;
+        font-size: 12px;
+        position: relative;
+        p {
+          float: left;
+          width: 60px;
+        }
+        ul {
+          width: 1090px;
+          position: absolute;
+          top: 20px;
+          left: 60px;
+          li {
+            height: 48px;
+            margin-right: 11px;
+            margin-left: 11px;
+            float: left;
+            a {
+              color: #666;
+            }
+            a:hover {
+              text-decoration: underline;
+            }
+          }
+          li:nth-child(14) {
+            margin-right: 16px;
+          }
+        }
+      }
+    }
+  }
+  /*有货回到顶部*/
+  .gototop {
+    position: fixed;
+    left: 50%;
+    margin-left: 595px;
+    width: 74px;
+    height: 74px;
+    top: 600px;
+    z-index: 100;
+    cursor: pointer;
+    opacity: 0.5;
+    display: none;
+  }
+  .gototop:hover {
+    opacity: 1;
+  }
+  /*有货公众号*/
+  .gong {
+    position: fixed;
+    left: 50%;
+    margin-left: 595px;
+    width: 74px;
+    height: 74px;
+    top: 500px;
+    background: url(../img/gong.png);
+    opacity: 0.5;
+    display: none;
+    .gong-show {
+      width: 260px;
+      height: 170px;
+      position: absolute;
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      left: -300px;
+      background: #f4f4f4;
+      display: none;
+      div {
+        float: left;
+        width: 120px;
+        margin-right: 20px;
+        text-align: center;
+        font-size: 10px;
+        img {
+          width: 120px;
+        }
+        h3 {
+          font-weight: normal;
+        }
+      }
+      div:nth-child(2) {
+        margin-right: 0;
+      }
+    }
+  }
+  .gong:hover {
+    opacity: 1;
+    .gong-show {
+      display: block;
+    }
+  }

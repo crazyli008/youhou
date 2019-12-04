@@ -315,6 +315,7 @@ section .right ol li:nth-child(9) a {
   margin-right: 10px;
 }
 
+/*有货注册底部*/
 .footer {
   margin-top: 110px;
   background: #000;
@@ -482,6 +483,7 @@ section .right ol li:nth-child(9) a {
   margin-right: 16px;
 }
 
+/*有货回到顶部*/
 .gototop {
   position: fixed;
   left: 50%;
